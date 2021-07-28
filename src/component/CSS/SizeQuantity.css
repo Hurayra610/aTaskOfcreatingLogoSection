@@ -1,0 +1,110 @@
+.allSandQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  margin: 10px 0;
+}
+
+.sizeQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  margin-top: 10px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px 5px rgb(189, 187, 187);
+}
+
+.sizeQuantity:hover {
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
+.size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.size > input {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.size > p {
+  font-weight: bold;
+}
+
+.quantity {
+  display: flex;
+}
+
+.stockInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+.stockInformation > h4 {
+  font-weight: bold;
+}
+
+.stockInformation > p {
+  color: gray;
+}
+
+.quantityArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  margin-left: 20px;
+  height: 40px;
+  width: 140px;
+}
+
+.incrementBtn,
+.decrementBtn {
+  height: 100%;
+  width: 27%;
+  background: rgb(212, 212, 212);
+  outline-width: 0;
+  border-width: 0;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.incrementBtn:hover,
+.decrementBtn:hover {
+  background: rgb(184, 184, 184);
+}
+
+.basketBtn {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(255, 93, 35);
+  font-weight: bold;
+  border-width: 0;
+  color: white;
+}
+
+.basketBtn:hover {
+  background-color: rgb(224, 75, 20);
+}

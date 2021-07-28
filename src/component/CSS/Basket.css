@@ -1,0 +1,153 @@
+.basketContainer {
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(255, 251, 247);
+  margin: 30px 0;
+}
+.basketContainer > h1 {
+  margin-bottom: 50px;
+}
+.basket {
+  width: 80%;
+  /* height: 100%; */
+  background-color: #e0e0e0;
+  padding: 50px;
+  box-shadow: 1px 1px 9px 1px rgb(93, 195, 226);
+  border-radius: 10px;
+}
+.bundleSummary {
+  margin-bottom: 20px;
+}
+.colorSizeQuantity {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemQuantity,
+.bundlePriceQuantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.totalQuantity {
+  padding-right: 15px;
+}
+.totalQuantity,
+.bundlePrice {
+  color: green;
+}
+
+.customizations {
+  margin-top: 40px;
+}
+.logoFee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+.logoDetails {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logoImage > img {
+  height: 50px;
+  width: 50px;
+  border: 1px dotted gray;
+  padding: 3px;
+  margin-right: 30px;
+}
+.logoType {
+  font-weight: bold;
+}
+.logoPosition {
+  color: gray;
+  font-size: 14px;
+}
+.logoPrice {
+  color: orangered;
+  font-weight: bold;
+}
+.totalAmmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  font-weight: bold;
+}
+.totalPrice {
+  color: green;
+}
+
+.orderBtn {
+  width: 100%;
+  margin: 15px;
+  padding: 10px 0;
+  border-radius: 5px;
+  border-width: 0;
+  background-color: rgb(207, 84, 36);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.orderBtn:hover {
+  background-color: rgb(240, 79, 15);
+}
+
+.colorSizeQuantityValue {
+  display: flex;
+  padding: 15px 0;
+}
+.displaySizeInBasket {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  flex-grow: 1.12;
+}
+.basketProductColor {
+  flex-grow: 1;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.basketProductSize {
+  display: flex;
+}
+.basketProductQty {
+  padding-right: 40px;
+}
+.pureSIze {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+.freeText {
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.logoOptionRemoveBtn {
+  color: red;
+  border-width: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#afterDisc {
+  color: black;
+  font-size: 12px;
+  margin-right: 20px;
+}

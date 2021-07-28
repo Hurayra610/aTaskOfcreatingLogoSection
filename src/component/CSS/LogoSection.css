@@ -1,0 +1,80 @@
+.logoSection {
+  padding: 20px 40px;
+  margin: 30px 18%;
+  background-color: rgb(235, 250, 255);
+  box-shadow: 0 0 9px 1px rgb(125, 216, 252);
+  border-radius: 10px;
+  height: 100%;
+}
+
+#choosePosition {
+  padding-left: 1%;
+  margin-bottom: 20px;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.pictureSection {
+  box-shadow: 0 0 9px 1px rgb(169, 223, 255);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  min-width: 220px;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.pictureInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+.pictureSection > img {
+  height: 150px;
+  width: 130px;
+}
+
+.appOption {
+  font-size: 13px;
+  color: gray;
+}
+
+.printAmbro,
+.printAmbro > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.printAmbro > p > .MuiSvgIcon-root {
+  color: orangered;
+  font-size: 16px;
+}
+
+.printIcon {
+  margin-right: 8px;
+}
+
+.checkInput {
+  margin-top: 10px;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.boldText {
+  font-weight: bold;
+}

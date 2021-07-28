@@ -1,0 +1,39 @@
+.applicationType {
+  margin: 25px 0;
+}
+
+.type {
+  margin: 25px 0;
+}
+
+.typeLogo,
+.typeText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 25px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.typeLogo:hover,
+.typeText:hover {
+  border: 1px solid rgb(8, 43, 119);
+  cursor: pointer;
+}
+
+.typeLogo > .MuiSvgIcon-root,
+.typeText > .MuiSvgIcon-root {
+  height: 50px;
+  width: 50px;
+  color: rgb(8, 43, 119);
+  margin-left: 20px;
+}
+
+.logoInfo,
+.textInfo {
+  margin-left: 20px;
+  line-height: 30px;
+}

@@ -1,0 +1,27 @@
+.methodError > h5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(255, 87, 25);
+  margin-bottom: 10px;
+}
+.methodError > h5 > .MuiSvgIcon-root {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.methodError > h5 > span {
+  font-size: 15px;
+}
+.methodError > ul {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.methodError > p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-left: 6px;
+}
+.methodError > p > span {
+  color: rgb(255, 87, 25);
+}
