@@ -60,6 +60,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  line-height: 25px;
 }
 
 .logoImage > img {
@@ -150,4 +151,40 @@
   color: black;
   font-size: 12px;
   margin-right: 20px;
+}
+.showArtWork {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.CustomLogo {
+  display: flex;
+}
+.basketArtWork {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.basketAppType {
+  color: rgb(22, 44, 116);
+  font-weight: bold;
+}
+.picColorFont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.fontColor {
+  margin-left: 20px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.basketTextLine {
+  margin: 20px 5px;
+  color: rgb(21, 60, 143);
+  font-size: 15px;
+}
+.basketTextArea {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  font-style: italic;
 }

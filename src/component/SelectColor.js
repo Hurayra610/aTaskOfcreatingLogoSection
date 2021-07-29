@@ -12,26 +12,39 @@ function SelectColor() {
       </div>
       <div className="colorBtn">
         <button
+          key="1"
           onClick={colorContext.blackBtnHandler}
           className="btn"
           id="black"
         >
           <CheckCircleIcon id="blackBtn" />
         </button>
-        <button onClick={colorContext.redBtnHandler} className="btn" id="red">
+        <button
+          key="2"
+          onClick={colorContext.redBtnHandler}
+          className="btn"
+          id="red"
+        >
           <CheckCircleIcon id="redBtn" />
         </button>
         <button
+          key="3"
           onClick={colorContext.greenBtnHandler}
           className="btn"
           id="green"
         >
           <CheckCircleIcon id="greenBtn" />
         </button>
-        <button onClick={colorContext.blueBtnHandler} className="btn" id="blue">
+        <button
+          key="4"
+          onClick={colorContext.blueBtnHandler}
+          className="btn"
+          id="blue"
+        >
           <CheckCircleIcon id="blueBtn" />
         </button>
         <button
+          key="5"
           onClick={colorContext.orangeBtnHandler}
           className="btn"
           id="orange"
@@ -39,6 +52,7 @@ function SelectColor() {
           <CheckCircleIcon id="orangeBtn" />
         </button>
         <button
+          key="6"
           onClick={colorContext.yellowBtnHandler}
           className="btn"
           id="yellow"

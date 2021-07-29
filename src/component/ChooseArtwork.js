@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import FiberNewIcon from "@material-ui/icons/FiberNew";
 import "./CSS/ChooseArtwork.css";
+import { DataContext } from "./DataContext";
 
 function ChooseArtwork() {
+  const artWorkContext = useContext(DataContext);
   return (
     <div className="chooseArtwork" id="section3">
       <h2>3. Choose Artwork</h2>
-      <div className="artWork">
+      <div
+        className="artWork"
+        onClick={artWorkContext.getArtWork}
+        title="Click to add Custom"
+      >
         <p>
           <strong>Add your</strong> logo/text
         </p>
         <div className="artworkArea">
-          <input className="input" type="radio" />
+          <input
+            onClick={artWorkContext.getArtWork}
+            className="input"
+            type="radio"
+          />
           <div className="artworkAreaInfo">
             <FiberNewIcon />
             <p className="infoHead">Add New Customisation</p>

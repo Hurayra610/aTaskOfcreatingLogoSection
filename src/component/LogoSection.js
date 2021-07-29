@@ -14,7 +14,6 @@ import ChooseArtwork from "./ChooseArtwork";
 import ApplicationType from "./ApplicationType";
 import DragAndDrop from "./DragAndDrop";
 import { DataContext } from "./DataContext";
-import Basket from "./Basket";
 
 function LogoSection() {
   const context = useContext(DataContext);
@@ -178,8 +177,6 @@ function LogoSection() {
         <ApplicationType />
         <hr />
         <DragAndDrop />
-        <hr />
-        <Basket />
       </div>
     </div>
   );

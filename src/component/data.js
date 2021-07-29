@@ -63,7 +63,8 @@ const data = [
     name: "Evana Baby Dress",
     brand: "EVANA",
     code: 5353,
-    image: "https://m.media-amazon.com/images/I/61zBLzPai1L._AC_UX679_.jpg",
+    image:
+      "https://images.unsplash.com/photo-1578897366846-358bb1c2412a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFieSUyMGRyZXNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
     price: 88,
     price25: 86,
     price50: 85,
@@ -119,11 +120,11 @@ const data = [
   },
   {
     id: 9,
-    name: "Nike Slim T-Shirt-N",
+    name: "Nike Slim Panjabi",
     brand: "NIKE",
     code: 1207,
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/61FF%2BzoZgYL._UX466_.jpg",
+      "https://lh3.googleusercontent.com/proxy/G7T5O6WWPMBh9VfIDDobwxbHfcEPuvRnl54vy_WX5h5iPte92bpDQ7GMuGa4WXv_anKNIsVKXf5BhaTTOrquVpLgquPBz7oEqQ3ss2-nLIZMu957Yh4liewV5Pfq75yso70PWAhJJsE",
     price: 110,
     price25: 108,
     price50: 106,
@@ -138,7 +139,7 @@ const data = [
     brand: "ROLUX",
     code: 7586,
     image:
-      "https://i.pinimg.com/originals/7e/c1/91/7ec1917e6dab0189f382b79168e3418c.jpg",
+      "https://i.pinimg.com/originals/e7/d9/83/e7d983cfdafab2b68651f44524e9d430.jpg",
     price: 189,
     price25: 186,
     price50: 185,
@@ -152,7 +153,8 @@ const data = [
     name: "Tedy Slim Shirt",
     brand: "TEDY",
     code: 7985,
-    image: "https://m.media-amazon.com/images/I/51n0mwXuSvS._AC._SR360,460.jpg",
+    image:
+      "https://images.unsplash.com/photo-1617113930975-f9c7243ae527?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
     price: 78,
     price25: 76,
     price50: 75,
@@ -167,7 +169,7 @@ const data = [
     brand: "JAPAN",
     code: 7751,
     image:
-      "https://images-na.ssl-images-amazon.com/images/I/71pxkizPYlL._UY550_.jpg",
+      "https://images.unsplash.com/photo-1564557287817-3785e38ec1f5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHN3ZWF0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
     price: 98,
     price25: 96,
     price50: 95,
@@ -181,7 +183,7 @@ const data = [
     name: "Portugal Dress Eve",
     brand: "PORTUGAL",
     code: 7772,
-    image: "https://m.media-amazon.com/images/I/61zBLzPai1L._AC_UX679_.jpg",
+    image: "https://4.imimg.com/data4/UO/EU/MY-23515953/404d1-500x500.jpg",
     price: 88,
     price25: 86,
     price50: 85,
@@ -196,7 +198,7 @@ const data = [
     brand: "INDIA",
     code: 1001,
     image:
-      "https://images.unsplash.com/photo-1620012150748-c759a494c133?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+      "https://static2.wellmadeclothes.com/media/product/31ad3ec8/t-shirt-dress-evergreen-kowtow-tshirtdress-evergreen-c.jpg",
     price: 99,
     price25: 96,
     price50: 95,
@@ -207,11 +209,11 @@ const data = [
   },
   {
     id: 15,
-    name: "UK Girls T-Shirt",
+    name: "UK Girls Dress",
     brand: "UK",
     code: 3130,
     image:
-      "https://rukminim1.flixcart.com/image/714/857/k6xxua80/t-shirt/g/x/a/m-w-necktop-olive-base-41-original-imafpaewvnugkfuf.jpeg?q=50",
+      "https://5.imimg.com/data5/HC/HN/MY-8330475/pr-fashion-new-designer-indo-western-dress-500x500.jpg",
     price: 55,
     price25: 53,
     price50: 52,
@@ -222,11 +224,11 @@ const data = [
   },
   {
     id: 16,
-    name: "Plain Color Shirt",
+    name: "Plain Color Suit",
     brand: "PLAIN",
     code: 4444,
     image:
-      "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/7460067/2018/9/21/70680d67-69a3-4b33-b121-168bff8aae331537519529754-NA-4201537519529611-1.jpg",
+      "https://images.unsplash.com/photo-1617137968427-85924c800a22?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
     price: 78,
     price25: 76,
     price50: 75,

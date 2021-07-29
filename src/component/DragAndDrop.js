@@ -1,38 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useDropzone } from "react-dropzone";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./CSS/DragAndDrop.css";
+import { DataContext } from "./DataContext";
 
-function DragAndDrop(props) {
-  const [files, setFiles] = useState([]);
-  const { getRootProps, getInputProps } = useDropzone({
-    accept: "image/*",
-    onDrop: (acceptedFiles) => {
-      setFiles(
-        acceptedFiles.map((file) =>
-          Object.assign(file, {
-            preview: URL.createObjectURL(file),
-          })
-        )
-      );
-    },
-  });
-
-  const thumbs = files.map((file) => (
-    <div key={file.name}>
-      <div>
-        <img className="thumbs" src={file.preview} alt="preview" />
-      </div>
-    </div>
-  ));
-
-  useEffect(
-    () => () => {
-      files.forEach((file) => URL.revokeObjectURL(file.preview));
-    },
-    [files]
-  );
-
+function DragAndDrop() {
+  const dragDropContext = useContext(DataContext);
   return (
     <div className="dragAndDrop" id="section5">
       <h2>5. Configure Your Logo</h2>
@@ -43,8 +15,8 @@ function DragAndDrop(props) {
             <p>Upload a logo file</p>
           </div>
           <section className="dragSection">
-            <div {...getRootProps()}>
-              <input {...getInputProps()} type="file" />
+            <div {...dragDropContext.getRootProps()}>
+              <input {...dragDropContext.getInputProps()} type="file" />
               <p className="withBtn">
                 Drag 'n' drop some files here, or click to select files
                 <button>Choose File</button>
@@ -52,7 +24,7 @@ function DragAndDrop(props) {
             </div>
             <p>JPG, PNG, All Image</p>
             <p className="fileSizeMax">Max Size: 5 mb</p>
-            <p>{thumbs}</p>
+            <p>{dragDropContext.thumbs}</p>
           </section>
         </div>
         <p className="proofText">
@@ -67,6 +39,7 @@ function DragAndDrop(props) {
           <div className="contactForLogoArea">
             <p>Special Instruction</p>
             <textarea
+              onChange={dragDropContext.getTextArea}
               name="SpecialInstruction"
               id="specialInstruction"
               cols="134"
@@ -78,6 +51,7 @@ function DragAndDrop(props) {
             <form type="submit">
               <label htmlFor="text1">Text Line:</label>
               <input
+                onChange={dragDropContext.getTextLine}
                 type="text"
                 id="text1"
                 name="text1"
@@ -86,11 +60,18 @@ function DragAndDrop(props) {
             </form>
             <form type="submit">
               <label htmlFor="Font">Font:</label>
-              <input type="text" id="Font" name="Font" placeholder="Optional" />
+              <input
+                onChange={dragDropContext.getFont}
+                type="text"
+                id="Font"
+                name="Font"
+                placeholder="Optional"
+              />
             </form>
             <form type="submit">
               <label htmlFor="colour">Colour:</label>
               <input
+                onChange={dragDropContext.getLogoColor}
                 type="text"
                 id="colour"
                 name="colour"

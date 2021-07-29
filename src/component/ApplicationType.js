@@ -1,22 +1,40 @@
-import React from "react";
+import React, { useContext } from "react";
 import PublicIcon from "@material-ui/icons/Public";
 import TextFieldsIcon from "@material-ui/icons/TextFields";
 import "./CSS/ApplicationType.css";
+import { DataContext } from "./DataContext";
 
 function ApplicationType() {
+  const appTypeContext = useContext(DataContext);
   return (
     <div className="applicationType" id="section4">
       <h2>4. Choose Application Type</h2>
       <div className="type">
-        <div className="typeLogo">
-          <input className="input" type="radio" name="radio" />
+        <div
+          className="typeLogo"
+          onClick={appTypeContext.setApplicationTypeLogo}
+        >
+          <input
+            onClick={appTypeContext.setApplicationTypeLogo}
+            className="input"
+            type="radio"
+            name="radio"
+          />
           <PublicIcon />
           <div className="logoInfo">
             <p className="infoHead">Logo</p>
           </div>
         </div>
-        <div className="typeText">
-          <input className="input" type="radio" name="radio" />
+        <div
+          className="typeText"
+          onClick={appTypeContext.setApplicationTypeText}
+        >
+          <input
+            className="input"
+            type="radio"
+            name="radio"
+            onClick={appTypeContext.setApplicationTypeText}
+          />
           <TextFieldsIcon />
           <div className="textInfo">
             <p className="infoHead">Text</p>

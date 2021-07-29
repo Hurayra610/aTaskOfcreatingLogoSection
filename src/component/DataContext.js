@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createContext } from "react";
 import data from "./data";
+import { useDropzone } from "react-dropzone";
 
 export const DataContext = createContext();
 
@@ -8,17 +9,22 @@ export const DataProvider = ({ children }) => {
   const [position, setPosition] = useState([]);
   const [method, setMethod] = useState([]);
   const [color, setColor] = useState([]);
+  const [files, setFiles] = useState([]);
   const [size, setSize] = useState([]);
-  // ...................................................
-  const [numItem, setNumItem] = useState(0);
   const [numItem1, setNumItem1] = useState(0);
   const [numItem2, setNumItem2] = useState(0);
   const [numItem3, setNumItem3] = useState(0);
   const [numItem4, setNumItem4] = useState(0);
   const [numItem5, setNumItem5] = useState(0);
+  const [numItem, setNumItem] = useState(0);
+  const [logoColor, setLogoColor] = useState("");
+  const [textArea, setTextArea] = useState("");
+  const [textLine, setTextLine] = useState("");
+  const [artWork, setArtWork] = useState("");
+  const [appType, setAppType] = useState("");
+  const [font, setFont] = useState("");
 
-  // // ...................................................
-
+  // ..............................incrementDecrement..................................
   const decrementValue = () => {
     setNumItem(numItem > 0 ? numItem - 1 : numItem);
   };
@@ -61,7 +67,8 @@ export const DataProvider = ({ children }) => {
     // setNumItem5(numItem5 < product.quantity ? numItem5 + 1 : product.quantity);
     setNumItem5(numItem5 + 1);
   };
-  //  .....................get Position .................
+
+  //  ........................................get Position ....................................
   const lbHandler = () => {
     setPosition([...position, "Left Breast"]);
   };
@@ -81,7 +88,7 @@ export const DataProvider = ({ children }) => {
     setPosition([...position, "Big Front"]);
   };
 
-  //  .................get Method..........................
+  //  .................................................get Method........................................
   const paintSelectionHandler = () => {
     setMethod([...method, "Paint"]);
   };
@@ -91,7 +98,7 @@ export const DataProvider = ({ children }) => {
     showErr.style.display = "block";
   };
 
-  // ...........................get color..................
+  // ................................................get color............................................
   const blackBtnHandler = () => {
     const element = document.getElementById("blackBtn");
     element.style.display = "block";
@@ -154,7 +161,57 @@ export const DataProvider = ({ children }) => {
     setSize([...size, xxlSize]);
     // setNumItem5(product.quantity > 0 && 1);
   };
-  console.log(numItem);
+
+  const getArtWork = () => {
+    setArtWork("Custom: ");
+  };
+  const setApplicationTypeLogo = () => {
+    setAppType("Logo");
+  };
+  const setApplicationTypeText = () => {
+    setAppType("Text");
+  };
+  const getTextArea = (e) => {
+    setTextArea(e.target.value);
+  };
+  const getTextLine = (e) => {
+    setTextLine(e.target.value);
+  };
+  const getFont = (e) => {
+    setFont(e.target.value);
+  };
+  const getLogoColor = (e) => {
+    setLogoColor(e.target.value);
+  };
+
+  // ...............................................drag&Drop......................................
+  const { getRootProps, getInputProps } = useDropzone({
+    accept: "image/*",
+    onDrop: (acceptedFiles) => {
+      setFiles(
+        acceptedFiles.map((file) =>
+          Object.assign(file, {
+            preview: URL.createObjectURL(file),
+          })
+        )
+      );
+    },
+  });
+  const thumbs = files.map((file) => (
+    <div key={file.name}>
+      <div>
+        <img className="thumbs" src={file.preview} alt="preview" />
+      </div>
+    </div>
+  ));
+  useEffect(
+    () => () => {
+      files.forEach((file) => URL.revokeObjectURL(file.preview));
+    },
+    [files]
+  );
+
+  // .............................................Return Option..........................................
   return (
     <DataContext.Provider
       value={{
@@ -202,6 +259,22 @@ export const DataProvider = ({ children }) => {
         numItem4,
         numItem5,
         setNumItem,
+        artWork,
+        getArtWork,
+        appType,
+        setApplicationTypeLogo,
+        setApplicationTypeText,
+        getRootProps,
+        getInputProps,
+        thumbs,
+        getTextArea,
+        textArea,
+        textLine,
+        getTextLine,
+        font,
+        getFont,
+        logoColor,
+        getLogoColor,
       }}
     >
       {children}
